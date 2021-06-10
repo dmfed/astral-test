@@ -1,0 +1,15 @@
+<!doctype html>
+<html charset="UTF-8">
+    <head>
+        <title>List of items in storage</title>
+    </head>
+    <body>
+        <h1>List of items in storage:</h1>
+        {{range .Elements}}
+        <br>
+        ID: {{.ID}} Payload: {{.Payload}}, Timestamp: {{.Added}}
+        {{end}}
+        <br>
+        <a href=/put>Click here to add item.</a>
+    </body>
+</html>

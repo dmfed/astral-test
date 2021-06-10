@@ -1,0 +1,16 @@
+<!doctype html>
+<html charset="UTF-8">
+    <head>
+        <title>Add element</title>
+    </head>
+    <body>
+        <h1>Add element to storage:</h1><br>
+        You are logged in as: {{.Username}}<br>
+        Fill the form and hit "Submit" button to add element.<br>
+        <form action="/put" method="POST">
+            <label for="payload">Element value:</label><br>
+            <input type="text" name="payload" id="payload"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
